@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+  body {
+    background: #fff;
+    background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
+    padding: 0 16px; 
+  }
+  
+  header {
+    background-color: #EC3600;
+    margin: auto -16px;
+    padding: 8px 28px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  header h1 {
+    color: #fff;
+    font-family: "Gabriola", regular;
+    font-weight: 200;
+    font-size: 3rem;
+  }
+  
+  footer {
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+  }
+  
+  footer p {
+    color: #000000;
+  }
+
+  .calendar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1050px;
+    margin: 100px auto 0px;
+    background-color: #EC3600;
+    border-radius: 15px;
+  }
+
+  .calendarDay {
+    min-width: 150px;
+    height: 100%;
+  }
+
+  .calendarDay p{
+    padding: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .TrainingSection {
+    width: 92.5%;
+    height: 330px;
+    margin: 50px 0 30px 7.5%;
+    display: flex;
+  }
+
+  .TrainingSection p{
+    position: absolute;
+    margin-top: 45px;
+    font-weight: 600;
+    z-index: 1;
+  }
+
+  .TrainingSection input{
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+  }
+
+  .TrainingSection input[type=text]:focus{
+    background-color: lightblue;
+  }
+
+  .TrainingSection h2{
+    position: absolute;
+    z-index: 1;
+  }
+
+  .addButton {
+    border: none;
+    border-radius: 5px;
+    background-color: #EC3600;
+    margin: 0 0 0 10px;
+  }
+
+  .addButton :hover{
+    background-color: #ff8c00;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .entryButton{
+    background-color: sandybrown;
+    border: none;
+    position: absolute;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .entryButton :hover{
+    cursor: pointer;
+  }
+
+  .deleteEntryButton{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    margin-left: 127px;
+    padding-top: 5px;
+  }
+
+  .deleteEntryButton :hover{
+    cursor: pointer;
+  }
+
+  .deleteEntryIcon{
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  .Card {
+    width: 340px;
+    margin: 80px 25px 0 0;
+    border: solid #ff8c00;
+    border-radius: 7px;
+    background-color: #ff8c00;
+    display: block;
+    z-index: 1;
+  }
+
+  .cardButtons {
+    background-color: #ff8c00;
+    border: none;
+    position: absolute;
+    margin-left: 8px;
+  }
+
+  .cardButtons :hover{
+    cursor: pointer;
+  }
+
+  .addCard {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+    padding: 7px;
+  }
+
+  .cardSelection{
+    width: 100px;
+    border-radius: 10px;
+    margin: 0 0 5px 10px;
+  }
+
+  .iconWhite {
+    color: white;
+    padding: 8px;
+  }
+
+  .videoFrame {
+    width: 80%;
+    margin: 4% 0 4% 4%;
+  }
+
+  .entry{
+    border-radius: 15px;
+    width: 80%;
+    height: 25px;
+    margin: 8px auto 8px 8px;
+  }
+
+  .thisIsTheNewCSSClass{
+    width: 95%;
+  }
+
+  .slick-prev {
+    background-color: black !important;
+    border-radius: 8px;
+    left: -40px !important;
+    top: 52% !important;
+    width: 25px !important;
+    height: 31px !important;
+  }
+
+  .slick-next {
+    background-color: black !important;
+    border-radius: 8px;
+    right: -15px !important;
+    top: 52% !important;
+    width: 25px !important;
+    height: 31px !important;
+  }
+
+  .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+    background-color: #fff;
+  }
+
+  @media only screen and (max-width: 1080px) {
+    .calendar {
+      width: 600px;
+    }
+  }
+
+  @media only screen and (max-width: 660px) {
+    .calendar {
+      width: 450px;
+    }
+  }
